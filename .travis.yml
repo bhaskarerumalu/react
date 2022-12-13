@@ -8,5 +8,5 @@ before_install:
   - docker build -t bhaskarerumalu/react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true bhaskarerumalu/react npm run test
+  - docker run bhaskarerumalu/react npm run test -- --coverage
 
